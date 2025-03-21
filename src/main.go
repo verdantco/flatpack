@@ -7,7 +7,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/verdantco/flatpack/src/geometry"
+	"github.com/verdantco/flatpack/geometry"
 )
 
 func main() {
