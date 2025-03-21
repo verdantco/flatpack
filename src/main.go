@@ -7,10 +7,14 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/verdantco/flatpack/geometry"
+	"github.com/verdantco/flatpack/src/geometry"
 )
 
 func main() {
+	if len(os.Args) < 2 {
+		panic("no .stl file provided")
+	}
+
 	file, err := os.Open("simple.stl")
 	if err != nil {
 		panic(err)
